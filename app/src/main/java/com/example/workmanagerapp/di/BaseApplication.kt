@@ -7,10 +7,9 @@ import androidx.work.Configuration
 import androidx.work.ListenableWorker
 import androidx.work.WorkerFactory
 import androidx.work.WorkerParameters
-import com.example.workmanagerapp.MyCustomWorker
+import com.example.workmanagerapp.worker.MyCustomWorker
 import com.example.workmanagerapp.db.EmployeeDatabase
 import com.example.workmanagerapp.retrofit.EmployeeApiService
-import dagger.assisted.Assisted
 import dagger.hilt.android.HiltAndroidApp
 import javax.inject.Inject
 

@@ -1,4 +1,4 @@
-package com.example.workmanagerapp
+package com.example.workmanagerapp.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

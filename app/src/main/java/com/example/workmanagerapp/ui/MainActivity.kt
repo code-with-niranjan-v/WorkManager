@@ -1,4 +1,4 @@
-package com.example.workmanagerapp
+package com.example.workmanagerapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,14 +7,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.work.BackoffPolicy
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import androidx.work.Worker
-import com.example.workmanagerapp.data.EmployeeDb
 import com.example.workmanagerapp.databinding.ActivityMainBinding
 import com.example.workmanagerapp.db.EmployeeDatabase
+import com.example.workmanagerapp.worker.MyCustomWorker
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import java.time.Duration
 import javax.inject.Inject
 

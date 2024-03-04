@@ -1,4 +1,4 @@
-package com.example.workmanagerapp
+package com.example.workmanagerapp.worker
 
 import android.content.Context
 import android.util.Log
@@ -6,10 +6,8 @@ import androidx.hilt.work.HiltWorker
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 import com.example.workmanagerapp.data.EmployeeData
-import com.example.workmanagerapp.data.EmployeeDb
 import com.example.workmanagerapp.db.EmployeeDatabase
 import com.example.workmanagerapp.retrofit.EmployeeApiService
-import com.example.workmanagerapp.retrofit.api
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 import kotlinx.coroutines.CoroutineScope
@@ -18,7 +16,6 @@ import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import kotlin.concurrent.thread
 
 @HiltWorker
 class MyCustomWorker @AssistedInject constructor(
