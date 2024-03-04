@@ -8,8 +8,11 @@ data class Employee(
     @SerializedName("employee_salary") val employeeSalary: Int,
     @SerializedName("employee_age") val employeeAge: Int,
     @SerializedName("profile_image") val profileImage: String
-)
-
+) {
+    fun toEmployeeDb():EmployeeDb{
+        return EmployeeDb(this.employeeName,this.employeeSalary,this.employeeAge)
+    }
+}
 data class EmployeeData(
     @SerializedName("status") val status: String,
     @SerializedName("data") val data: List<Employee>,
