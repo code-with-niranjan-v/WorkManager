@@ -33,6 +33,17 @@
         android:text="Start Worker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPeriodicWorker"
+        android:textSize="20sp"
+        style="@style/Widget.Material3.Button.TextButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnPeriodicWorker"
+        android:layout_height="wrap_content"
+        android:text="Start Periodic Worker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnWorker"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="20sp"
         style="@style/Widget.Material3.Button.TextButton"/>
